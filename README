@@ -1,0 +1,6 @@
+Cacherl is an Erlang port of famous Memcached trying to take advantage of
+both Erlang and Memcached. It follows the simple interface of memcached
+with additional data persistence. All memcached clients (C/PHP/Perl/...)
+can access Cacherl without any code modification. Moreover, the distributing
+of cached data is ensured by Erlang instead of memcached client hashing,
+so we don't need to worry about data invalidation when adding more servers.
